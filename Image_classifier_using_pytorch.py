@@ -6,7 +6,7 @@ from torch.optim import Adam
 from torch.utils.data import DataLoader
 from torchvision import datasets
 from torchvision.transforms import ToTensor
-
+from torch import torch 
 # Load the MNIST dataset
 train = datasets.MNIST(root="data", download=True, train=True, transform=ToTensor())
 dataset = DataLoader(train, 32)
